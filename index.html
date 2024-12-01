@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srishti Bisht | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="profile_pic.jpg" alt="Srishti Bisht - Digital Artist" class="profile-pic">
+            <div class="profile-info">
+                <h1 id="fullName">Srishti Bisht</h1>
+                <h2 id="username">@art.tu.brute</h2>
+                <p id="bio"></p>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-label">Posts</span>
+                        <span id="posts-count" class="stat-value">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Followers</span>
+                        <span id="followers-count" class="stat-value">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Following</span>
+                        <span id="following-count" class="stat-value">0</span>
+                    </div>
+                </div>
+                <a href="#" id="external-link" target="_blank" class="external-link">My Store</a>
+            </div>
+        </div>
+
+        <div class="gallery-controls">
+            <input type="text" id="search" placeholder="Search posts...">
+            <select id="sort">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+            </select>
+        </div>
+
+        <div id="gallery" class="gallery"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content" class="modal-media-container"></div>
+            
+            <div class="modal-navigation">
+                <button id="prev-btn" class="nav-btn prev-btn">&#10094;</button>
+                <button id="next-btn" class="nav-btn next-btn">&#10095;</button>
+            </div>
+
+            <div class="modal-details">
+                <p id="modal-caption"></p>
+                <div id="modal-hashtags" class="hashtags"></div>
+                <p id="modal-date" class="post-date"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
